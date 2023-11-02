@@ -34,5 +34,5 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 
 # write your own comment -what does the next line do? 
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-# Display Data int a Grid.
-#streamlit.dataframe(fruityvice_normalized)
+# Display Data in a Grid.
+streamlit.dataframe(fruityvice_normalized)
